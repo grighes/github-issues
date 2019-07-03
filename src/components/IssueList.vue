@@ -1,8 +1,8 @@
 <template>
   <div class="issue-list">
-    <div class="animated fadeIn fixed z-50 pin overflow-auto bg-color flex">
+    <div class="animated fadeIn fixed z-50 inset-0 overflow-auto bg-color flex">
       <div
-        class="issue-container overflow-scroll animated fadeInUp fixed shadow-inner pin-b pin-x align-top m-auto justify-end md:justify-center p-8 bg-white w-full md:shadow flex flex-col"
+        class="issue-container overflow-scroll animated fadeInUp fixed shadow-inner bottom-0 inset-x-0 align-top m-auto justify-end md:justify-center p-8 bg-white w-full md:shadow flex flex-col"
       >
         <ul class="issue-wrapper container h-48 mx-auto list-reset max-w-lg" v-if="issueList">
           <li
@@ -18,7 +18,7 @@
             </div>
             <button
               @click="addToFavorites(issues, $event)"
-              class="transition w-full md:w-24 h-10 bg-grey-light hover:bg-grey text-grey-darkest font-bold py-2 px-4 rounded inline-flex items-center mt-4 sm:mt-0"
+              class="transition w-full md:w-24 h-10 bg-gray-300 hover:bg-gray text-gray-900 font-bold py-2 px-4 rounded inline-flex items-center mt-4 sm:mt-0"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                 <path
@@ -32,9 +32,9 @@
         <div v-else>
           <p>No issues found</p>
         </div>
-        <span @click="handleToggleModal" class="absolute pin-t pin-r pt-4 px-4">
+        <span @click="handleToggleModal" class="absolute top-0 right-0 pt-4 px-4">
           <svg
-            class="h-12 w-12 text-grey hover:text-grey-darkest"
+            class="h-12 w-12 text-gray hover:text-gray-700"
             role="button"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
