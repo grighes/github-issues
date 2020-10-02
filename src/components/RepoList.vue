@@ -68,6 +68,10 @@ export default {
 .repo-list {
   li {
     border-bottom: 1px solid #637de8;
+    a, p {
+      white-space: pre-wrap;
+      overflow-wrap: break-word;
+    }
   }
   a {
     color: #000;
